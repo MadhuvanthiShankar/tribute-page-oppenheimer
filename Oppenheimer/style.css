@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+body {
+  height: 308vh;
+  background-color: rgb(167, 192, 129);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.header-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: pink; */
+}
+
+.pic-container img {
+  width: 30vw;
+  object-fit: contain;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.name-container {
+  /* background-color: blue; */
+  margin-left: 10px;
+}
+.name-container span {
+  font-size: 80px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+.info-container {
+  background-color: rgb(80, 96, 71);
+  border: 1px solid transparent;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: auto;
+  width: 77%;
+  border-radius: 20px;
+  margin-bottom: 70px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.info-container p {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(255, 231, 227);
+  font-weight: bolder;
+  text-align: justify;
+  /* position: relative; */
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+#quick-reads {
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 40px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.card-container {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 77%;
+  /* padding: 20px; */
+  /* margin-bottom: 200px; */
+}
+.card1 {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px !important;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card1-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  border-radius: 20px !important;
+  background-color: rgba(0, 0, 0, 0.264);
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+  /* padding: 30px; */
+  transition: 1.5s;
+}
+.card1-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  padding: 20px;
+}
+.card1:hover .card1-content {
+  right: 0;
+}
+.card2 {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card2-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.138);
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+  transition: 1.5s;
+}
+.card2-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  padding: 20px;
+}
+.card2:hover .card2-content {
+  right: 0;
+}
+.card3 {
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card3-content {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.181);
+  backdrop-filter: blur(7px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: white;
+  transition: 1.5s;
+}
+.card3-content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  padding: 20px;
+}
+.card3:hover .card3-content {
+  right: 0;
+}
